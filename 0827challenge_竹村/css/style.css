@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: serif, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+        "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+header {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    width: 94%;
+}
+h1 {
+    font-size: 40px;
+    padding: 5px;
+}
+.subtitle {
+    color: #686767;
+    font-size: 18px;
+    padding: 5px;
+}
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    font-size: 16px;
+    display: flex;
+    margin-right: 200px;
+}
+.menu li {
+    padding-right: 40px;
+}
+.mark {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.mark span {
+    position: relative;
+}
+.mark span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(135deg);
+    margin-top: -5px;
+}
+
+.topimage {
+    max-width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+    width: 94%;
+}
+.maintext {
+    color: #686767;
+    font-size: 28px;
+    line-height: 1.8;
+    margin: 90px 0px;
+}
+
+.content {
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 94%;
+}
+.contents {
+    display: flex;
+}
+.contents + .contents {
+    margin-top: 70px;
+}
+.date {
+    color: #acabab;
+    width: 32%;
+}
+.content-text {
+    width: 68%;
+}
+h2 {
+    font-size: 22px;
+    margin-bottom: 23px;
+}
+.content-sentence {
+    color: #686767;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.pagination {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 90px 0px 120px 0px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.pagination-ul {
+    margin-left: 340px;
+}
+.pagination li {
+    /*??paddingの左右と上下を5px差にしたら正方形になった*/
+    padding: 12px 17px;
+    margin-right: 5px;
+    border: 1px #acabab solid;
+    color: #000053;
+    display: inline;
+}
+.pagination .this {
+    background-color: #e1e1e1;
+    color: #fff;
+}
+
+footer {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+    width: 94%;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.item1 {
+    width: 25%;
+}
+.item2 {
+    width: 20%;
+}
+.profile {
+    display: flex;
+}
+.profile-phot {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.access {
+    padding: 25px 0 25px 25px;
+}
+.name {
+    color: #000;
+    font-size: 20px;
+}
+.link {
+    margin-top: 12px;
+}
+.icon {
+    padding-right: 5px;
+}
+.navi-sentence {
+    margin-top: 20px;
+}
+.navi-sentence1 {
+    color: #686767;
+    line-height: 1.5;
+    font-size: 17px;
+}
+.navi-sentence2 {
+    color: #686767;
+    line-height: 1.5;
+    font-size: 16px;
+}
+h3 {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.title1 {
+    color: #686767;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px #e1e1e1;
+    display: inline-block;
+}
+.title2 {
+    color: #686767;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #e1e1e1;
+    display: inline-block;
+}
+.date2 {
+    color: #acabab;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.search {
+    color: #898888;
+    font-size: 17px;
+    margin-top: 75px;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+}
+
+.copyright {
+    display: flex;
+    margin: 60px 0px 40px 0px;
+}
+.link2 {
+    width: 30%;
+}
+.icon2 {
+    margin-right: 20px;
+}
+.copyright-text {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.copyright-text1 {
+    color: #565656;
+    padding: 0 5px;
+}
+.copyright-text1 + .copyright-text1 {
+    border-left: 1px solid #acabab;
+    height: 16px;
+}
+.front {
+    color: #9d9c9c;
+}
+
+@media screen and (max-width: 980px) {
+    /*画面サイズが979px以下の場合ここの記述が適用される*/
+    /*??979pxの記述だと適用されない*/
+    header {
+        display: block;
+        width: 74%;
+        margin: 0 auto;
+    }
+    .menu {
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .menu ul {
+        margin-right: 100px;
+    }
+    .menu li {
+        padding-right: 35px;
+    }
+
+    .topimage {
+        width: 74%;
+    }
+    .maintext {
+        margin: 70px 0px;
+    }
+
+    .content {
+        width: 74%;
+        margin: 0 auto;
+    }
+    .contents {
+        display: block;
+    }
+    .content-text {
+        width: 97%;
+    }
+    h2 {
+        margin-top: 15px;
+    }
+    .pagination {
+        width: 74%;
+        padding-bottom: 90px;
+    }
+    .pagination-ul {
+        margin-left: 0px;
+    }
+    .pagination li {
+        /*??paddingの左右と上下を5px差にしたら正方形になった*/
+        padding: 12px 17px;
+        margin-right: 5px;
+        border: 1px #acabab solid;
+        color: #000053;
+        display: inline;
+    }
+
+    footer {
+        width: 74%;
+    }
+    .navigation {
+        display: block;
+        padding-bottom: 70px;
+    }
+    .item1 {
+        width: 97%;
+        padding-bottom: 75px;
+    }
+    .item2 {
+        width: 97%;
+        padding-bottom: 80px;
+    }
+
+    .navi-sentence2 {
+        padding-bottom: 100px;
+        width: 100%;
+    }
+    .navi-sentence4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .title2 {
+        /*display: block;*/
+    }
+
+    .search {
+        width: 40%;
+    }
+
+    .copyright {
+        display: block;
+    }
+    .link2 {
+        padding-bottom: 35px;
+    }
+}
